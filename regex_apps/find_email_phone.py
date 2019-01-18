@@ -20,13 +20,8 @@ def check_text(input_file):
         print("List of mobile numbers from the uploaded file: ", match_mob)
     except FileNotFoundError:
         print("No file exists in the provided path!!")
-<<<<<<< HEAD
         data.close()
-       
-=======
-     
-    
->>>>>>> ab0ad7ec3cf3c56104507c9266766289e0a2a20e
+      
 #Extract function for .csv files     
 def check_csv(input_file):
     try:
@@ -41,12 +36,8 @@ def check_csv(input_file):
             print(match_mob)
     except FileNotFoundError:
         print("No file exists in the provided path!!")
-<<<<<<< HEAD
         csv_file.close()
-       
-=======
-
->>>>>>> ab0ad7ec3cf3c56104507c9266766289e0a2a20e
+        
 #Extract function for .docx files
 def check_doc(input_file):
     try:
@@ -64,12 +55,8 @@ def check_doc(input_file):
                 print(mob)
     except:
         print("No file exists in the provided path!!")
-<<<<<<< HEAD
         doc.close()
 
-=======
- 
->>>>>>> ab0ad7ec3cf3c56104507c9266766289e0a2a20e
 if __name__ == "__main__":
     if bool(csv_pattern.match(sys.argv[1])) == True:
         print("The uploaded file path is: ", sys.argv[1])
